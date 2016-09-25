@@ -5,11 +5,15 @@ import java.util.Random;
 import com.yubin.hongbao.bean.RedPacket;
 
 
-
+/**
+ * 
+ * @author acer-pv
+ *
+ */
 public class RedPacketAlg {
 	public static double getRandomMoney(RedPacket _RedPacket) {
-	    // remainSize 剩余的红包数量
-	    // remainMoney 剩余的钱
+	    // remainSize 鍓╀綑鐨勭孩鍖呮暟閲�
+	    // remainMoney 鍓╀綑鐨勯挶
 	    if (_RedPacket.remainSize == 1) {
 	        _RedPacket.remainSize--;
 	        return (double) Math.round(_RedPacket.remainMoney * 100) / 100;
